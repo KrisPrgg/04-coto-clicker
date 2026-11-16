@@ -1,0 +1,106 @@
+[gd_resource type="Theme" format=3 uid="uid://ys2xacnkyg0n"]
+
+[ext_resource type="Texture2D" uid="uid://bd12kgk3ggijw" path="res://assets/Sprite.png" id="1_lh4gy"]
+[ext_resource type="FontFile" uid="uid://5ksdmik1bmbj" path="res://assets/ComicoroRu_0.ttf" id="2_nomyp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yylm"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(59, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nomyp"]
+texture = SubResource("AtlasTexture_4yylm")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tcwr"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vp4gi"]
+texture = SubResource("AtlasTexture_7tcwr")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7jqw"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(107, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qard"]
+texture = SubResource("AtlasTexture_x7jqw")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tefeu"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(153, 105, 30, 30)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tbgi4"]
+texture = SubResource("AtlasTexture_tefeu")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwtss"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(677, 70, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ch11"]
+texture = SubResource("AtlasTexture_nwtss")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_co7a4"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(645, 68, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4xuw1"]
+texture = SubResource("AtlasTexture_co7a4")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p06yu"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(677, 70, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvcqg"]
+texture = SubResource("AtlasTexture_p06yu")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85g3d"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(805, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tipki"]
+texture = SubResource("AtlasTexture_85g3d")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbgi4"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(773, 100, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jyhfs"]
+texture = SubResource("AtlasTexture_tbgi4")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6xl0"]
+atlas = ExtResource("1_lh4gy")
+region = Rect2(805, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tefeu"]
+texture = SubResource("AtlasTexture_o6xl0")
+
+[resource]
+default_font = ExtResource("2_nomyp")
+ClickButton/base_type = &"Button"
+ClickButton/styles/hover = SubResource("StyleBoxTexture_nomyp")
+ClickButton/styles/normal = SubResource("StyleBoxTexture_vp4gi")
+ClickButton/styles/pressed = SubResource("StyleBoxTexture_3qard")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_tbgi4")
+PauseButton/base_type = &"ClickButton"
+PauseButton/styles/hover = SubResource("StyleBoxTexture_4ch11")
+PauseButton/styles/normal = SubResource("StyleBoxTexture_4xuw1")
+PauseButton/styles/pressed = SubResource("StyleBoxTexture_uvcqg")
+ShopButton/base_type = &"ClickButton"
+ShopButton/styles/hover = SubResource("StyleBoxTexture_tipki")
+ShopButton/styles/normal = SubResource("StyleBoxTexture_jyhfs")
+ShopButton/styles/pressed = SubResource("StyleBoxTexture_tefeu")

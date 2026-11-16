@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dih117v6g65pr"]
+
+[ext_resource type="FontFile" uid="uid://5ksdmik1bmbj" path="res://assets/ComicoroRu_0.ttf" id="1_jnpgm"]
+[ext_resource type="Script" uid="uid://c188ul4tw5im4" path="res://scripts/float_text.gd" id="2_cia6o"]
+
+[sub_resource type="Theme" id="Theme_fefvj"]
+default_font = ExtResource("1_jnpgm")
+
+[node name="Label" type="Label" unique_id=369857481]
+offset_right = 24.0
+offset_bottom = 23.0
+theme = SubResource("Theme_fefvj")
+text = "+1"
+script = ExtResource("2_cia6o")

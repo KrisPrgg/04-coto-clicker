@@ -1,0 +1,580 @@
+[gd_scene format=4 uid="uid://cyqi8eh6mvaq2"]
+
+[ext_resource type="FontFile" uid="uid://5ksdmik1bmbj" path="res://assets/ComicoroRu_0.ttf" id="1_1l46r"]
+[ext_resource type="Texture2D" uid="uid://b7aht4piritmm" path="res://assets/grass.png" id="1_lx5au"]
+[ext_resource type="Script" uid="uid://bn8khh1ywyt2g" path="res://scripts/shop.gd" id="3_2fc2m"]
+[ext_resource type="Texture2D" uid="uid://bd12kgk3ggijw" path="res://assets/Sprite.png" id="3_032fp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tcwr"]
+atlas = ExtResource("3_032fp")
+region = Rect2(677, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vp4gi"]
+texture = SubResource("AtlasTexture_7tcwr")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4yylm"]
+atlas = ExtResource("3_032fp")
+region = Rect2(645, 100, 22, 24)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nomyp"]
+texture = SubResource("AtlasTexture_4yylm")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x7jqw"]
+atlas = ExtResource("3_032fp")
+region = Rect2(677, 102, 22, 22)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qard"]
+texture = SubResource("AtlasTexture_x7jqw")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m4ofw"]
+atlas = ExtResource("3_032fp")
+region = Rect2(107, 107, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y6sft"]
+texture = SubResource("AtlasTexture_m4ofw")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v8qu"]
+atlas = ExtResource("3_032fp")
+region = Rect2(11, 59, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_heatd"]
+texture = SubResource("AtlasTexture_1v8qu")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fc2m"]
+atlas = ExtResource("3_032fp")
+region = Rect2(11, 106, 26, 29)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_032fp"]
+texture = SubResource("AtlasTexture_2fc2m")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajxib"]
+atlas = ExtResource("3_032fp")
+region = Rect2(59, 107, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8r1wq"]
+texture = SubResource("AtlasTexture_ajxib")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="Theme" id="Theme_032fp"]
+default_font = ExtResource("1_1l46r")
+ButtonPlay/base_type = &"Button"
+ButtonPlay/styles/hover = SubResource("StyleBoxTexture_vp4gi")
+ButtonPlay/styles/normal = SubResource("StyleBoxTexture_nomyp")
+ButtonPlay/styles/pressed = SubResource("StyleBoxTexture_3qard")
+ButtonPrice/base_type = &"ButtonPlay"
+ButtonPrice/styles/disabled = SubResource("StyleBoxTexture_y6sft")
+ButtonPrice/styles/hover = SubResource("StyleBoxTexture_heatd")
+ButtonPrice/styles/normal = SubResource("StyleBoxTexture_032fp")
+ButtonPrice/styles/pressed = SubResource("StyleBoxTexture_8r1wq")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_032fp"]
+texture = ExtResource("1_lx5au")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+9:16/0 = 0
+0:17/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+9:17/0 = 0
+0:18/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+9:18/0 = 0
+0:19/0 = 0
+1:19/0 = 0
+2:19/0 = 0
+3:19/0 = 0
+4:19/0 = 0
+5:19/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+9:19/0 = 0
+0:20/0 = 0
+1:20/0 = 0
+2:20/0 = 0
+3:20/0 = 0
+4:20/0 = 0
+5:20/0 = 0
+6:20/0 = 0
+7:20/0 = 0
+8:20/0 = 0
+9:20/0 = 0
+0:21/0 = 0
+1:21/0 = 0
+2:21/0 = 0
+3:21/0 = 0
+4:21/0 = 0
+5:21/0 = 0
+6:21/0 = 0
+7:21/0 = 0
+8:21/0 = 0
+9:21/0 = 0
+0:22/0 = 0
+1:22/0 = 0
+2:22/0 = 0
+3:22/0 = 0
+4:22/0 = 0
+5:22/0 = 0
+6:22/0 = 0
+7:22/0 = 0
+8:22/0 = 0
+9:22/0 = 0
+0:23/0 = 0
+1:23/0 = 0
+2:23/0 = 0
+3:23/0 = 0
+4:23/0 = 0
+5:23/0 = 0
+6:23/0 = 0
+7:23/0 = 0
+8:23/0 = 0
+9:23/0 = 0
+0:24/0 = 0
+1:24/0 = 0
+2:24/0 = 0
+3:24/0 = 0
+4:24/0 = 0
+5:24/0 = 0
+6:24/0 = 0
+7:24/0 = 0
+8:24/0 = 0
+9:24/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1l46r"]
+sources/1 = SubResource("TileSetAtlasSource_032fp")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1l46r"]
+atlas = ExtResource("3_032fp")
+region = Rect2(552, 155, 35, 17)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdvjf"]
+atlas = ExtResource("3_032fp")
+region = Rect2(690, 194, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16vmr"]
+atlas = ExtResource("3_032fp")
+region = Rect2(163, 178, 90, 27)
+
+[sub_resource type="Theme" id="Theme_1l46r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6b6u5"]
+atlas = ExtResource("3_032fp")
+region = Rect2(628, 83, 7, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bkq3"]
+atlas = ExtResource("3_032fp")
+region = Rect2(627, 209, 10, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vfll"]
+atlas = ExtResource("3_032fp")
+region = Rect2(642, 195, 12, 11)
+
+[node name="Control" type="Control" unique_id=1453286808]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_032fp")
+script = ExtResource("3_2fc2m")
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=1975660787]
+tile_map_data = PackedByteArray("AAAAAAAAAQAEAA4AAAAAAAEAAQAEAA8AAAABAAAAAQAFAA4AAAABAAEAAQAFAA8AAAACAAAAAQAIABAAAAACAAEAAQAIABEAAAADAAAAAQAJABAAAAADAAEAAQAJABEAAAAGAAUAAQAIABAAAAAGAAYAAQAIABEAAAAHAAUAAQAJABAAAAAHAAYAAQAJABEAAAAAAAwAAQAIABAAAAAAAA0AAQAIABEAAAABAAwAAQAJABAAAAABAA0AAQAJABEAAAAEAAkAAQAIABAAAAAEAAoAAQAIABEAAAAFAAkAAQAJABAAAAAFAAoAAQAJABEAAAAAAAIAAQACABAAAAAAAAMAAQACABEAAAABAAIAAQADABAAAAABAAMAAQADABEAAAAGAAcAAQACABAAAAAGAAgAAQACABEAAAAHAAcAAQADABAAAAAHAAgAAQADABEAAAAGAAkAAQACABAAAAAGAAoAAQACABEAAAAHAAkAAQADABAAAAAHAAoAAQADABEAAAACAAwAAQACABAAAAACAA0AAQACABEAAAADAAwAAQADABAAAAADAA0AAQADABEAAAAAAAoAAQACABAAAAAAAAsAAQACABEAAAABAAoAAQADABAAAAABAAsAAQADABEAAAAEAAcAAQAEABAAAAAEAAgAAQAEABEAAAAFAAcAAQAFABAAAAAFAAgAAQAFABEAAAAGAAsAAQAEABAAAAAGAAwAAQAEABEAAAAHAAsAAQAFABAAAAAHAAwAAQAFABEAAAAEAAwAAQAEABAAAAAEAA0AAQAEABEAAAAFAAwAAQAFABAAAAAFAA0AAQAFABEAAAACAAIAAQAEABAAAAACAAMAAQAEABEAAAADAAIAAQAFABAAAAADAAMAAQAFABEAAAAEAAAAAQAEABAAAAAEAAEAAQAEABEAAAAFAAAAAQAFABAAAAAFAAEAAQAFABEAAAAGAA0AAQAEAA4AAAAHAA0AAQAFAA4AAAAEAAsAAQAEAA4AAAAFAAsAAQAFAA4AAAACAAsAAQAAABAAAAADAAsAAQABABAAAAACAAoAAQAAABAAAAADAAoAAQABABAAAAACAAgAAQACABUAAAACAAkAAQACABYAAAADAAgAAQADABUAAAADAAkAAQADABYAAAAEAAIAAQACABUAAAAEAAMAAQACABYAAAAFAAIAAQADABUAAAAFAAMAAQADABYAAAAAAAQAAQACABUAAAAAAAUAAQACABYAAAABAAQAAQADABUAAAABAAUAAQADABYAAAAAAAYAAQAAABUAAAAAAAcAAQAAABYAAAABAAYAAQABABUAAAABAAcAAQABABYAAAAEAAQAAQAAABUAAAAEAAUAAQAAABYAAAAFAAQAAQABABUAAAAFAAUAAQABABYAAAACAAQAAQAIABUAAAACAAUAAQAIABYAAAADAAQAAQAJABUAAAADAAUAAQAJABYAAAACAAYAAQAIABUAAAACAAcAAQAIABYAAAADAAYAAQAJABUAAAADAAcAAQAJABYAAAAAAAgAAQAIABUAAAAAAAkAAQAIABYAAAABAAgAAQAJABUAAAABAAkAAQAJABYAAAAEAAYAAQAFABQAAAAFAAYAAQAFABQAAAAHAAQAAQAFABQAAAAGAAQAAQAFABQAAAAGAAMAAQAFABQAAAAHAAMAAQAFABQAAAAHAAIAAQAFABQAAAAGAAIAAQAFABQAAAAGAAEAAQAFABQAAAAHAAEAAQAFABQAAAAGAAAAAQAFABQAAAAHAAAAAQAFABQAAAA=")
+tile_set = SubResource("TileSet_1l46r")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2018288377]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 9.0
+offset_right = 114.0
+offset_bottom = 213.0
+
+[node name="PlayButton" type="Button" parent="MarginContainer" unique_id=1734944929]
+custom_minimum_size = Vector2(20, 20)
+custom_maximum_size = Vector2(20, 20)
+layout_mode = 2
+theme_type_variation = &"ButtonPlay"
+
+[node name="CoinsControl" type="Control" parent="MarginContainer" unique_id=1963243739]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="CoinAndLevelTextureRect" type="TextureRect" parent="MarginContainer/CoinsControl" unique_id=1834758843]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -22.0
+offset_right = 21.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_1l46r")
+
+[node name="CoinsLabel" type="Label" parent="MarginContainer/CoinsControl" unique_id=1592369030]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 3.0
+offset_right = 41.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CoinsControl" unique_id=151507035]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 34.0
+offset_right = 50.0
+offset_bottom = 204.0
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/CoinsControl/VBoxContainer" unique_id=521094564]
+layout_mode = 2
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer" unique_id=1572311133]
+custom_minimum_size = Vector2(15, 15)
+custom_maximum_size = Vector2(15, 15)
+layout_mode = 2
+texture = SubResource("AtlasTexture_cdvjf")
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer" unique_id=1636318917]
+custom_minimum_size = Vector2(50, 20)
+custom_maximum_size = Vector2(50, 20)
+layout_mode = 2
+texture = SubResource("AtlasTexture_16vmr")
+
+[node name="Label" type="Label" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer/TextureRect2" unique_id=89327940]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 16.0
+text = "2з/тап"
+
+[node name="Button" type="Button" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer" unique_id=1063852848]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme = SubResource("Theme_1l46r")
+theme_type_variation = &"ButtonPrice"
+text = "  30"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer/Button" unique_id=1421085299]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 12.0
+offset_bottom = 15.0
+texture = SubResource("AtlasTexture_6b6u5")
+
+[node name="GridContainer2" type="GridContainer" parent="MarginContainer/CoinsControl/VBoxContainer" unique_id=371844671]
+layout_mode = 2
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer2" unique_id=497650856]
+custom_minimum_size = Vector2(15, 15)
+custom_maximum_size = Vector2(15, 15)
+layout_mode = 2
+texture = SubResource("AtlasTexture_cdvjf")
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer2" unique_id=2045850007]
+custom_minimum_size = Vector2(50, 20)
+custom_maximum_size = Vector2(50, 20)
+layout_mode = 2
+texture = SubResource("AtlasTexture_16vmr")
+
+[node name="Label" type="Label" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer2/TextureRect2" unique_id=316834946]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 16.0
+text = "4з/тап"
+
+[node name="Button" type="Button" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer2" unique_id=1442328572]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme = SubResource("Theme_1l46r")
+theme_type_variation = &"ButtonPrice"
+text = "  100"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer2/Button" unique_id=1763996945]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 12.0
+offset_bottom = 15.0
+texture = SubResource("AtlasTexture_6b6u5")
+
+[node name="GridContainer3" type="GridContainer" parent="MarginContainer/CoinsControl/VBoxContainer" unique_id=1049274821]
+layout_mode = 2
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer3" unique_id=369708340]
+custom_minimum_size = Vector2(15, 15)
+custom_maximum_size = Vector2(15, 18)
+layout_mode = 2
+texture = SubResource("AtlasTexture_8bkq3")
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer3" unique_id=1699828304]
+custom_minimum_size = Vector2(50, 20)
+custom_maximum_size = Vector2(50, 20)
+layout_mode = 2
+texture = SubResource("AtlasTexture_16vmr")
+
+[node name="Label" type="Label" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer3/TextureRect2" unique_id=1569696453]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = 47.0
+offset_bottom = 16.0
+text = "авто 6"
+
+[node name="Button" type="Button" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer3" unique_id=96341886]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme = SubResource("Theme_1l46r")
+theme_type_variation = &"ButtonPrice"
+text = "  150"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer3/Button" unique_id=1756129810]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 12.0
+offset_bottom = 15.0
+texture = SubResource("AtlasTexture_6b6u5")
+
+[node name="GridContainer4" type="GridContainer" parent="MarginContainer/CoinsControl/VBoxContainer" unique_id=656381829]
+layout_mode = 2
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer4" unique_id=1861438278]
+custom_minimum_size = Vector2(15, 15)
+custom_maximum_size = Vector2(15, 18)
+layout_mode = 2
+texture = SubResource("AtlasTexture_2vfll")
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer4" unique_id=1931103212]
+custom_minimum_size = Vector2(50, 20)
+custom_maximum_size = Vector2(50, 20)
+layout_mode = 2
+texture = SubResource("AtlasTexture_16vmr")
+
+[node name="Label" type="Label" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer4/TextureRect2" unique_id=791288187]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 53.0
+offset_bottom = 16.0
+text = "казик 50"
+
+[node name="Button" type="Button" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer4" unique_id=198106543]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme = SubResource("Theme_1l46r")
+theme_type_variation = &"ButtonPrice"
+text = "  25"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CoinsControl/VBoxContainer/GridContainer4/Button" unique_id=1883836238]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 12.0
+offset_bottom = 15.0
+texture = SubResource("AtlasTexture_6b6u5")
+
+[connection signal="pressed" from="MarginContainer/PlayButton" to="." method="_on_down_button_pressed"]
+[connection signal="pressed" from="MarginContainer/CoinsControl/VBoxContainer/GridContainer/Button" to="." method="_on_level_coin_button_pressed" binds= [NodePath("MarginContainer/CoinsControl/VBoxContainer/GridContainer/Button"), 30, 2]]
+[connection signal="pressed" from="MarginContainer/CoinsControl/VBoxContainer/GridContainer2/Button" to="." method="_on_level_coin_button_pressed" binds= [NodePath("MarginContainer/CoinsControl/VBoxContainer/GridContainer2/Button"), 100, 4]]
+[connection signal="pressed" from="MarginContainer/CoinsControl/VBoxContainer/GridContainer3/Button" to="." method="_on_auto_level_coin_button_pressed" binds= [NodePath("MarginContainer/CoinsControl/VBoxContainer/GridContainer3/Button"), 6]]
+[connection signal="pressed" from="MarginContainer/CoinsControl/VBoxContainer/GridContainer4/Button" to="." method="_on_button_pressed" binds= [NodePath("MarginContainer/CoinsControl/VBoxContainer/GridContainer4/Button"), 50]]
