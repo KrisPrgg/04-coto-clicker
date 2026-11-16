@@ -19,3 +19,7 @@ func _on_button_save_pressed() -> void:
 
 func _on_button_continue_pressed() -> void:
 	Global.load_game()
+
+
+func _on_exit_button_pressed() -> void:
+	get_tree().quit()
